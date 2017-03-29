@@ -8,9 +8,11 @@
     "webpack": "2.3.2"
   },
   "scripts": {
-    "build": "rimraf dist && webpack -w"
+    "build": "rimraf dist && webpack",
+    "dev": "webpack-dev-server"
   },
   "devDependencies": {
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack-dev-server": "2.4.2"
   }
 }
