@@ -1,0 +1,16 @@
+{
+  "name": "webpack-zero-to-hero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ji Wu <ji.wu@outlook.com> (https://github.com/j1wu)",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "2.3.2"
+  },
+  "scripts": {
+    "build": "rimraf dist && webpack src/index.js dist/bundle.js -w"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  }
+}
