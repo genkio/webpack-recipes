@@ -8,7 +8,7 @@
     "webpack": "2.3.2"
   },
   "scripts": {
-    "build": "rimraf dist && webpack src/index.js dist/bundle.js -w"
+    "build": "rimraf dist && webpack -w"
   },
   "devDependencies": {
     "rimraf": "^2.6.1"
