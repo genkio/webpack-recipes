@@ -2,10 +2,11 @@ const messages = require('./messages');
 
 import Button from './button';
 import Image from './image';
+import Logo from './logo';
 
 let getContent = () => (
   `
-    <div>${Image}</div>
+    <div>${Image}${Logo}</div>
     <div>${Button.button}</div>
   `
 );
