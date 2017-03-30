@@ -20,8 +20,13 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: '/\.js$/',
+        test: /\.js$/,
         loaders: ['babel-loader'],
+        exclude: '/node_modules/'
+      },
+      {
+        test: /\.(png|jp?g|gif)$/i,
+        loaders: ['file-loader'],
         exclude: '/node_modules/'
       }
     ]
