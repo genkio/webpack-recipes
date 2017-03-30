@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "rimraf dist && webpack",
-    "dev": "webpack-dev-server"
+    "dev": "node dev-server.js"
   },
   "devDependencies": {
     "rimraf": "^2.6.1",
