@@ -1,5 +1,5 @@
 {
-  "name": "webpack-zero-to-hero",
+  "name": "webpack-recipes",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Ji Wu <ji.wu@outlook.com> (https://github.com/j1wu)",
@@ -11,6 +11,14 @@
     "build": "rimraf dist && NODE_ENV=production webpack",
     "dev": "NODE_ENV=development node dev-server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j1wu/webpack-recipes.git"
+  },
+  "keywords": [
+    "webpack",
+    "recipes"
+  ],
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
