@@ -14,6 +14,7 @@ var plugins = PRODUCTION ? [] :
   [ new webpack.HotModuleReplacementPlugin() ];
 
 module.exports = {
+  devtool: 'source-map',
   entry: entry,
   plugins: plugins,
   module: {
