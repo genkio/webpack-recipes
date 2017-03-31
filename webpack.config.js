@@ -10,8 +10,17 @@ var entry = PRODUCTION ? ['./src/index.js'] :
     'webpack/hot/dev-server',
     'webpack-dev-server/client?http://localhost:8080'
   ];
-var plugins = PRODUCTION ? [] :
+var plugins = PRODUCTION ?
+  [ new webpack.optimize.UglifyJsPlugin() ]
+  :
   [ new webpack.HotModuleReplacementPlugin() ];
+
+plugins.push(
+  new webpack.DefinePlugin({
+    DEVELOPMENT: JSON.stringify(DEVELOPMENT),
+    PRODUCTION: JSON.stringify(PRODUCTION)
+  })
+);
 
 module.exports = {
   devtool: 'source-map',
